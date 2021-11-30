@@ -13,7 +13,6 @@ Welcome to Package-Deployment-Test's documentation!
    modules
 
 
-
 Indices and tables
 ==================
 

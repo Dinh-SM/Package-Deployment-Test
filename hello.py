@@ -15,10 +15,9 @@ def hello_guys(text):
 		text (str): given text in a specific language (optional).
 
 	Returns:
-		sympathetic_greeting (str): the sympathetic greeting in the corresponding
+		str: the sympathetic greeting in the corresponding
 		language.
 
-	Unit tests:
 	>>> hello_guys("saucisson")
 	'Bonjour gars!'
 	>>> hello_guys("donna")
