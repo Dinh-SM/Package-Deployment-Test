@@ -1,3 +1,3 @@
 # Package-Deployment-Test
 
-[Documentation](docs/build/html/index.html)
+[Documentation](https://dinh-sm.github.io/Package-Deployment-Test/)
