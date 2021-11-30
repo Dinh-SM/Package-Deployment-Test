@@ -1,4 +1,5 @@
 import sys
+import doctest
 from textblob import TextBlob
 from googletrans import Translator, constants
 
@@ -16,6 +17,24 @@ def hello_guys(text):
 	Returns:
 		sympathetic_greeting (str): the sympathetic greeting in the corresponding
 		language.
+
+	Unit tests:
+	>>> hello_guys("saucisson")
+	'Bonjour gars!'
+	>>> hello_guys("donna")
+	'Ciao ragazzi!'
+	>>> hello_guys("pizza")
+	'Hello guys!'
+	>>> hello_guys("维尼熊")
+	'大家好！'
+	>>> hello_guys("ブラックホール")
+	'こんにちはみんな！'
+	>>> hello_guys("reich")
+	'Hallo Leute!'
+	>>> hello_guys("despacito")
+	'¡Hola chicos!'
+	>>> hello_guys(None)
+	'No text but hello guys!'
 	"""
 	translator = Translator()
 
@@ -32,13 +51,22 @@ def hello_guys(text):
 
 	return sympathetic_greeting
 
+
 def main():
+	"""Main function
+
+	Gets the first command line argument then prints the return value of hello_guys
+	function with the command line argument as parameter
+	"""
 	if len(sys.argv) > 1:
 		result = hello_guys(sys.argv[1])
 	else:
 		result = hello_guys(None)
 
 	print(result)
+
+	doctest.testmod()
+
 
 if __name__ == '__main__':
 	main()
