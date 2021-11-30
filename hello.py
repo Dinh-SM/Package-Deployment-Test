@@ -12,7 +12,7 @@ def hello_guys(text):
 	the corresponding language
 
 	Args:
-		text (str): given text in a specific language.
+		text (str): given text in a specific language (optional).
 
 	Returns:
 		sympathetic_greeting (str): the sympathetic greeting in the corresponding
@@ -66,6 +66,9 @@ def main():
 	print(result)
 
 	doctest.testmod()
+
+	#/usr/share/sphinx/scripts/python3/sphinx-quickstart
+	#/usr/share/sphinx/scripts/python3/sphinx-apidoc -o ./source ../..
 
 
 if __name__ == '__main__':
