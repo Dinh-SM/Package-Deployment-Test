@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>hello module &mdash; Package-Deployment-Test 0.1 documentation</title>
+  <title>hello_guys_dinh_sm module &mdash; Package-Deployment-Test 0.1 documentation</title>
   
 
   
@@ -91,7 +91,7 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Package-Deployment-Test</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">hello module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">hello_guys_dinh_sm module</a></li>
 </ul>
 </li>
 </ul>
@@ -148,13 +148,13 @@
         
           <li><a href="modules.html">Package-Deployment-Test</a> &raquo;</li>
         
-      <li>hello module</li>
+      <li>hello_guys_dinh_sm module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/hello.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/hello_guys_dinh_sm.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -167,8 +167,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="hello-module">
-<h1>hello module<a class="headerlink" href="#hello-module" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="hello-guys-dinh-sm-module">
+<h1>hello_guys_dinh_sm module<a class="headerlink" href="#hello-guys-dinh-sm-module" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-hello_guys_dinh_sm"></span><dl class="function">
+<dt id="hello_guys_dinh_sm.hello_guys">
+<code class="descclassname">hello_guys_dinh_sm.</code><code class="descname">hello_guys</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hello_guys_dinh_sm.html#hello_guys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hello_guys_dinh_sm.hello_guys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a sympathetic greeting in the language of the given text</p>
+<p>Initializes a translator (form Google Translator API), then detects the given
+text language with TextBlob and finally returns a sympathetic greeting in
+the corresponding language</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – given text in a specific language (optional).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the sympathetic greeting in the corresponding
+language.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;saucisson&quot;</span><span class="p">)</span>
+<span class="go">&#39;Bonjour gars!&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;donna&quot;</span><span class="p">)</span>
+<span class="go">&#39;Ciao ragazzi!&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;pizza&quot;</span><span class="p">)</span>
+<span class="go">&#39;Hello guys!&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;维尼熊&quot;</span><span class="p">)</span>
+<span class="go">&#39;大家好！&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;ブラックホール&quot;</span><span class="p">)</span>
+<span class="go">&#39;こんにちはみんな！&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;reich&quot;</span><span class="p">)</span>
+<span class="go">&#39;Hallo Leute!&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="s2">&quot;despacito&quot;</span><span class="p">)</span>
+<span class="go">&#39;¡Hola chicos!&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hello_guys</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="go">&#39;No text but hello guys!&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="hello_guys_dinh_sm.main">
+<code class="descclassname">hello_guys_dinh_sm.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/hello_guys_dinh_sm.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hello_guys_dinh_sm.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function</p>
+<p>Gets the first command line argument then prints the return value of hello_guys
+function with the command line argument as parameter</p>
+</dd></dl>
+
 </div>
 
 
